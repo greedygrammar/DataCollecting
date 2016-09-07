@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".SwitchActivity"
+    android:id="@+id/relativeLayout1">
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/darkwhite"
+        android:textSize="20dp"
+        android:text="训练"
+        android:id="@+id/button_train"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/darkwhite"
+        android:textSize="20dp"
+        android:text="测试"
+        android:id="@+id/button_test"
+        android:layout_below="@+id/button_train"
+        android:layout_alignLeft="@+id/button_train"
+        android:layout_alignStart="@+id/button_train"
+        android:layout_marginTop="60dp" />
+
+
+
+</RelativeLayout>
+

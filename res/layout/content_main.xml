@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alice_wang.datacollect.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkwhite"
+            android:text="注册"
+            android:textSize="20dp"
+            android:id="@+id/btregister"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/dc_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/btregister"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/mail_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="200dp" />
+
+        <EditText
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edname"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="218dp"
+            android:hint="用户名"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/lock_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="268dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edpassword"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="288dp"
+            android:hint="密码"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:text="登录"
+            android:textColor="@color/darkwhite"
+            android:textSize="20dp"
+            android:id="@+id/btlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="370dp" />
+    </RelativeLayout>
