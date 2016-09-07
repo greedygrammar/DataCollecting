@@ -8,4 +8,4 @@ The most important class in this programme is the DataCollecting class extends A
 
 the DataCollecting class initializes the SensorManager Objects with the appropriate OnResume, OnPause and OnSensorChanged method. Activity also has the contenview with buttons witch contains numbers from 0 to 9.
 
-When users click the button, we record the corresponding number with the user's clicking time in millisecond, acceleration, gyroscope, pressure and size.
+When users click the button, we record the corresponding number with the user's clicking time in millisecond, acceleration, gyroscope, pressure AND size.
