@@ -25,8 +25,6 @@ public class RegistersActivity extends Activity {
     private RadioButton male;
     private RadioButton female;
     private EditText edage;
-    //public static String sex;
-    //public static String age;
     SQLiteDatabase db;
 
 
@@ -79,13 +77,13 @@ public class RegistersActivity extends Activity {
                             public void onClick(DialogInterface dialog,
                                                 int which) {
                                 // TODO Auto-generated method stub
-                                // 跳转到登录界面
+                                // jump to login
                                 Intent in = new Intent();
                                 in.setClass(RegistersActivity.this,
                                         MainActivity.class);
                                 in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(in);
-                                // 销毁当前activity
+                                // destroy this activity
                                 RegistersActivity.this.onDestroy();
                             }
                         };
@@ -111,11 +109,11 @@ public class RegistersActivity extends Activity {
 
     }
 
-    // 添加用户
+    // add use
     public Boolean addUser(String name, String password) {
         String str = "insert into tb_user1 values(?,?,?,?) ";
         MainActivity main = new MainActivity();
-        Log.v("yqq","yqq"+this.getFilesDir().toString());
+        Log.v("wyh","wyh"+this.getFilesDir().toString());
         db = SQLiteDatabase.openOrCreateDatabase(this.getFilesDir().toString()
                 + "/testname.dbs", null);
         main.db = db;
@@ -127,9 +125,6 @@ public class RegistersActivity extends Activity {
         }
         return false;
     }
-
-
-
 
 
 }
