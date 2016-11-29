@@ -10,3 +10,4 @@ the DataCollecting class initializes the SensorManager Objects with the appropri
 
 When users click the button, we record the corresponding number with the user's clicking time in millisecond, acceleration, gyroscope, pressure and size.
 
+Thanks to Qianqing Yang and Yan Li
